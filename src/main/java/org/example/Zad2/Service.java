@@ -30,6 +30,7 @@ public class Service {
                 Files.write(Paths.get(path), line.getBytes(), StandardOpenOption.APPEND);
             }
         }
+        System.out.println("Errors were written to: " + path);
         return errorCount;
     }
 }
